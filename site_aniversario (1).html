@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Aniversário</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #c8b5ff, #bde6ff);
+      color: #3a2c5f;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      margin: 0;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    .section {
+      padding: 30px 16px;
+      max-width: 750px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px 0;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    iframe {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    #musicBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ffffffaa;
+      border: none;
+      padding: 14px;
+      border-radius: 50%;
+      font-size: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Feliz Aniversário, Amiga! 🎉💗</h1>
+</header>
+
+<section id="musica" class="section card">
+  <h2>✨ Nossa Trilha Sonora</h2>
+  <p>Playlist feita especialmente pra você 💜</p>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5AL2HIR8JIwxOZuVoRlULG?utm_source=generator" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</section>
+
+<section id="galeria" class="section card">
+  <h2>💫 Galeria de Memórias</h2>
+  <div class="gallery">
+    <img src="https://i.imgur.com/S6XkjtI.jpeg" alt="The 100">
+    <img src="https://i.imgur.com/KHkP0lF.jpeg" alt="Dan e Serena Gossip Girl">
+    <img src="https://i.imgur.com/4s6i7YG.jpeg" alt="Dove Cameron">
+    <img src="https://i.imgur.com/8sZm5q0.jpeg" alt="Nicholas Galitzine">
+  </div>
+</section>
+
+<section id="videos" class="section card">
+  <h2>🎥 Vídeos</h2>
+  <div class="video-grid">
+    <iframe height="200" src="https://www.youtube.com/embed/4SspgN2eh0g"></iframe>
+    <iframe height="200" src="https://www.youtube.com/embed/aF-ADheiWSQ"></iframe>
+  </div>
+</section>
+
+<section class="section card">
+  <h2>🌸 Momentos Fofos</h2>
+  <div class="gallery">
+    <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Taylor Swift gif">
+    <img src="https://media.giphy.com/media/Yl5aO3gdVfsQ0/giphy.gif" alt="Selena Gomez gif">
+  </div>
+</section>
+
+<section id="mensagem" class="section card" style="margin-bottom: 80px;">
+  <h2>💗 Um Poema Para Você</h2>
+  <p>
+    No silêncio doce das coisas que guardamos,
+    nasce um céu lilás onde teu riso sempre mora;
+    cada lembrança tua é luz que nunca apaga,
+    cada gesto teu é a brisa leve que me ancora.
+    <br><br>
+    Se o tempo dança, eu danço junto contigo,
+    porque teu existir colore tudo ao redor;
+    e em cada capítulo nosso — tão bonito —
+    descubro que a vida fica sempre melhor.
+  </p>
+</section>
+
+<button id="musicBtn">🎵</button>
+
+</body>
+</html>
